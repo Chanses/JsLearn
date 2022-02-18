@@ -1,5 +1,3 @@
-const lodash = require('lodash');
-
 
 // Задача 1
 
@@ -13,10 +11,7 @@ const sortedUniq = function(array){
 }
 
 let arr = ([1, 1, 2, 3, 3, 4,1,1,1,2,2,3 ]);
-let sorted = sortedUniq(arr);
-let sortedLodash =  lodash.sortedUniq(arr);
-console.log(sortedLodash);
-console.log(sorted)
+console.log(sortedUniq(arr))
 
 
 // Задача 2
@@ -69,9 +64,7 @@ const isEqual = function(obj1,obj2){
     
     
 }
- 
-console.log(isEqual(user,user2)) 
-console.log(lodash.isEqual(user,user2)) 
+ console.log(isEqual(user,user2)) 
 
 
 // Задача 3
@@ -91,8 +84,5 @@ const difference = function(array,[values]){
     return difference;
 
 }
+
 console.log(difference([1,2,5],[1,6],[7,8],[5,7])) 
-console.log(lodash.difference([1,2,5],[1,6],[7,8],[5,7]))
-
-
-
