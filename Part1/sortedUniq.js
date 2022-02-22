@@ -1,8 +1,3 @@
-
-const lodash = require('lodash');
-// Задача 1
-
-
 const sortedUniq = function(array){
     let uniqArray =  array.slice();
    
@@ -12,9 +7,3 @@ const sortedUniq = function(array){
     }
     return uniqArray;
 }
-
-let arr = [1, 1, 2, 3, 3, 4,1,1,1,2,2,3 ];
-console.log(sortedUniq(arr))
-console.log(lodash.sortedUniq(arr))
-
-
