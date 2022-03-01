@@ -1,6 +1,6 @@
 function Calculate(value) {
   if (!new.target) {
-    throw "Function is not constructor";
+    throw new Error("Function is not constructor");
   }
 
   const initValue = [value];
