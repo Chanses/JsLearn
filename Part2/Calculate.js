@@ -37,13 +37,13 @@ function Calculate(value) {
             result.push(-el);
             break;
           case "*": {
-            const lastElement = result[index - 1];
+            const lastElement = result[result.length - 1];
             result.pop();
             result.push(lastElement * el);
             break;
           }
           case "/": {
-            const lastElement = result[index - 1];
+            const lastElement = result[result.length - 1];
             result.pop();
             result.push(lastElement / el);
             break;
@@ -57,5 +57,11 @@ function Calculate(value) {
   return methods;
 }
 
-const check = new Calculate(2).plus(2).multiply(2).minus(1).calculate();
+const check = new Calculate(5)
+  .multiply(2)
+  .plus(2)
+  .divide(1)
+  .plus(3)
+  .divide(3)
+  .calculate();
 console.log(check);
